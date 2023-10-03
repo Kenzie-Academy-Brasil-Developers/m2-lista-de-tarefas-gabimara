@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Dancing+Script:wght@600&family=Roboto:wght@100;400&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e2e2;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw 8vw;
+    box-shadow: 6px 2px 4px rgba(0,0,0,0.4);
+}
+.header__title {
+    color: #3b5bdb;
+    font-size: 2em;
+}
+.header__input--search--input__box{
+    color: #e2e2e2;
+    align-items: end;
+}
+.form__container{
+    background-color: white;
+    border-radius: 10px ;
+    margin: 70px;
+    padding: 20px;
+}
+
+.form__title{
+    font-size: 2em; 
+}
+
+.tasks__container{
+    background-color: white;
+    border-radius: 10px ;
+    margin: 70px;
+    padding: 20px;
+}
