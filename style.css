@@ -26,7 +26,7 @@ header {
     color: #3b5bdb;
     font-size: 2em;
 }
-.header__input--search--input__box{
+.header__input--search {
     color: #e2e2e2;
     box-shadow: 0 0 0 0;
     border: 0 none;
