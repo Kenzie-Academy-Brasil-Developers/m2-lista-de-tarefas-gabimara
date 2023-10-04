@@ -11,17 +11,28 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-content: stretch;
+    align-items: stretch;
 }
 header {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background-color: white;
     padding: 3vw 8vw;
     box-shadow: 6px 2px 4px rgba(0,0,0,0.4);
 }
-
+.header__content{
+    display: flex;
+    gap: 80%;
+}
 .header__title {
     color: #3b5bdb;
     font-size: 2em;
@@ -58,6 +69,7 @@ header {
     border-radius: 5px;
     padding: 10px;
     width: 200px;
+    text-align: center;
 
 }
 .form__container{
