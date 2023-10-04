@@ -4,7 +4,14 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #e2e2e2;
 }
-
+main{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
 header {
     background-color: white;
     display: flex;
@@ -14,13 +21,44 @@ header {
     padding: 3vw 8vw;
     box-shadow: 6px 2px 4px rgba(0,0,0,0.4);
 }
+
 .header__title {
     color: #3b5bdb;
     font-size: 2em;
 }
 .header__input--search--input__box{
     color: #e2e2e2;
-    align-items: end;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.form__container input{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.form__input--priority {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #e2e2e2;
+    color:#7b7c7d;
+}
+.form__button--add-task{
+    background-color: #3b5bdb;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+
 }
 .form__container{
     background-color: white;
@@ -35,7 +73,18 @@ h2{
 
 .tasks__container{
     background-color: white;
-    border-radius: 10px ;
+    border-radius: 10px;
     margin: 70px;
     padding: 20px;
+}
+.task-info__container{
+    background-color:  #e2e2e2;
+    margin:20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+::placeholder{
+    background-color: #e2e2e2;
+    border-radius: 3px;
 }
