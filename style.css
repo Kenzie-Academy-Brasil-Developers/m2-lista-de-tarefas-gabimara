@@ -105,27 +105,31 @@ body{
 
 .task-info__container{
     display: flex;
+    align-items: center;
 }
 
 h2{
     font-size: 2em; 
 }
-/*
-.form__container{
-    background-color: white;
-    border-radius: 10px ;
-    margin: 70px;
-    padding: 20px;
+.task-type {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    margin-right: 0.6rem;
 }
-
-.tasks__container{
-    background-color: white;
-    border-radius: 10px;
-    margin: 70px;
-    padding: 20px;
+.span-urgent{
+    background-color: #e40404;
 }
-
-::placeholder{
-    background-color: #e2e2e2;
-    border-radius: 3px;
+.span-important{
+    background-color: #f3a703;
+}
+.span-normal{
+    background-color: #028302;
+}
+.task__button--remove-task{
+    background-image:url(assets/trash-icon.svg);
+    background-repeat: no-repeat;
+    height: 1rem;
+    border: none;
+    width: 1rem;
 }
