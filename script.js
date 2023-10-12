@@ -10,3 +10,47 @@ const tasks = [
   {title: "Pagar a conta de energia", type: "Urgente"},
   {title: "Assistir a um documentário interessante", type: "Normal"},
 ];
+
+
+function renderElements (tasks){
+  const ulTasks = document.querySelector('.tasks__list')
+  ulTasks.innerText = ''
+ for(let i = 0; i < tasks.length; i++){
+
+  let currentTask = createTaskItem(tasks[i])
+
+  ulTasks.appendChild(currentTask)
+ }
+}
+
+function createTaskItem (object){
+const li = document.createElement('li');
+const div = document.createElement('div');
+const span = document.createElement('span');
+const p = document.createElement('p');
+const button = document.createElement('button');
+
+
+li.classList.add('task__item');
+div.classList.add('task-info__container');
+span.classList.add('task-type');
+p.innerText = object.title;
+button.classList.add('task__button--remove-task');
+
+if (object.type === 'Urgente') {
+  span.classList.add('span-urgent')
+}
+else if(object.type === 'Importante'){
+  span.classList.add('span-important')
+}
+ else{
+  span.classList.add('span-normal')
+}
+
+div.append(span, p)
+li.append(div, button)
+
+return li;
+}
+renderElements(tasks)
+
