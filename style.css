@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #e2e2e2;
-    height:100vh;
+    height: 100vh;
 }
-.header__container{
+
+.header__container {
     display: flex;
     background-color: white;
     height: 10%;
 }
-.header__content{
+
+.header__content {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -23,10 +25,11 @@ body{
     font-weight: 500;
 }
 
-.header__input--search{
+.header__input--search {
     height: 60%;
     width: 44%;
 }
+
 .main__container {
     width: 70%;
     margin-left: auto;
@@ -36,22 +39,25 @@ body{
 }
 
 .form__container {
-   background-color: white;
-   display: flex;
-   flex-direction: column;
-   padding: 5%;
-   margin-top: 7%;
-   border-radius: 15px;
-   gap: 1rem
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin-top: 7%;
+    border-radius: 15px;
+    gap: 1rem
 }
-.form__title{
+
+.form__title {
     font-size: 2em;
 }
-.form__input-container{
+
+.form__input-container {
     display: flex;
     justify-content: space-between;
 }
-.form__input--text{
+
+.form__input--text {
     height: 3em;
     width: 65%;
 }
@@ -60,16 +66,16 @@ body{
     width: 30%;
 }
 
-.input__box{
+.input__box {
     border: none;
-    background-color:#ebebeb;
+    background-color: #ebebeb;
     border-radius: 5px;
-    color:#868686;
+    color: #868686;
     padding: 0.5em;
     padding-left: 1em;
 }
 
-.form__button--add-task{
+.form__button--add-task {
     background-color: #3b5bdb;
     color: white;
     border-radius: 5px;
@@ -77,7 +83,7 @@ body{
     border: none;
 }
 
-.tasks__container{
+.tasks__container {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -87,13 +93,13 @@ body{
     gap: 3rem;
 }
 
-.tasks__list{
+.tasks__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.task__item{
+.task__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,31 +109,36 @@ body{
     border-radius: 10px;
 }
 
-.task-info__container{
+.task-info__container {
     display: flex;
     align-items: center;
 }
 
-h2{
-    font-size: 2em; 
+h2 {
+    font-size: 2em;
 }
+
 .task-type {
     height: 10px;
     width: 10px;
     border-radius: 100%;
     margin-right: 0.6rem;
 }
-.span-urgent{
+
+.span-urgent {
     background-color: #e40404;
 }
-.span-important{
+
+.span-important {
     background-color: #f3a703;
 }
-.span-normal{
+
+.span-normal {
     background-color: #028302;
 }
-.task__button--remove-task{
-    background-image:url(assets/trash-icon.svg);
+
+.task__button--remove-task {
+    background-image: url(assets/trash-icon.svg);
     background-repeat: no-repeat;
     height: 1rem;
     border: none;
